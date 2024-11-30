@@ -42,7 +42,7 @@ public class ProductController {
             e.printStackTrace();
         }
         model.addAttribute("products", products);
-        model.addAttribute("user", foundUser); // Add foundUser to model if needed
+        model.addAttribute("user", foundUser); 
         return "index";  
     }
 

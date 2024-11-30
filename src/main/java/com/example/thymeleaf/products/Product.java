@@ -36,7 +36,7 @@ public class Product {
     private int Quantity; // Default quantity of the product for customers
 
     @JsonProperty("Show")
-    private boolean Show; // Determine if the product is on sell
+    private boolean Show; // Determine if the product is on sale
 
     // Getters and Setters
     public String getId() {
