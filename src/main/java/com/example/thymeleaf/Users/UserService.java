@@ -1,7 +1,11 @@
 package com.example.thymeleaf.Users;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+
 
 @Service
 public class UserService {
@@ -17,5 +21,9 @@ public class UserService {
     
     public User findByUsername(String username) {
         return userRepository.findByUsername(username); // Find user by username
+    }
+
+    public List<User> getAllUsers() {
+        return userRepository.findAll(); // Retrieve all products
     }
 }

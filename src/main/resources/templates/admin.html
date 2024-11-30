@@ -21,27 +21,62 @@
         <div class="search-bar">
         </div>
 
-    <table style="width:80%" border="1" class = "table table-striped table-responsive-md">
-        <thead>
-            <tr>
-                <th>ID</th>
-                <th>Name</th>
-                <th>Action</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr th:each="products:${allemplist}">
-                <td th:text="${products.js_id}"></td>
-                <td th:text="${products.Name}"></td>
-                <td> 
-                    <a th:href="@{/update/{id}(id=${products.id})}" class="btn btn-primary">Update</a>
-                    <a th:href="@{/delete/{id}(id=${products.id})}" class="btn btn-danger">Delete</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
+        <h1>Products Management: </h1>
+        <table style="width:80%" border="1" class = "table table-striped table-responsive-md">
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>Name</th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="product:${allemplistProducts}">
+                    <td th:text="${product.js_id}"></td>
+                    <td th:text="${product.Name}"></td>
+                    <td> 
+                        <a th:href="@{/update/{id}(id=${product.id})}" class="btn btn-primary">Update</a>
+                        <a th:href="@{/delete/{id}(id=${product.id})}" class="btn btn-danger">Delete</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
 
+        <h1>Registered Customers: </h1>
+        <table style="width:80%" border="1" class = "table table-striped table-responsive-md">
+            <thead>
+                <tr>
+                    <th>Database ID</th>
+                    <th>Name</th>
+                    <th>Password (hashed)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="user:${allemplistUsers}">
+                    <td th:text="${user.id}"></td>
+                    <td th:text="${user.username}"></td>
+                    <td th:text="${user.password}"></td>
+                </tr>
+            </tbody>
+        </table>
 
+        <h1>Transaction Records: </h1>
+        <table style="width:80%" border="1" class = "table table-striped table-responsive-md">
+            <thead>
+                <tr>
+                    <th>Database ID</th>
+                    <th>Name</th>
+                    <th>Total Cost</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="transaction:${allemplistTransactions}">
+                    <td th:text="${transaction.id}"></td>
+                    <td th:text="${transaction.username}"></td>
+                    <td th:text="${transaction.totalPrice}"></td>
+                </tr>
+            </tbody>
+        </table>
 
     </body>
 </html>

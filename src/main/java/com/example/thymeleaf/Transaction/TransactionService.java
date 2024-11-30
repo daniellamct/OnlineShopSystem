@@ -1,7 +1,11 @@
 package com.example.thymeleaf.Transaction;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
+
 
 @Service
 public class TransactionService {
@@ -14,6 +18,8 @@ public class TransactionService {
         return transactionRepository.save(transaction); // Save user to MongoDB
     }
 
-    
+    public List<Transaction> getAllTransactions() {
+        return transactionRepository.findAll(); // Retrieve all products
+    }
 
 }

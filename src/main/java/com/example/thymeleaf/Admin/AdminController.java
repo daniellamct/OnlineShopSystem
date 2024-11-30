@@ -10,6 +10,8 @@ import org.springframework.web.bind.annotation.PostMapping;
 
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
+import com.example.thymeleaf.Transaction.TransactionService;
+import com.example.thymeleaf.Users.UserService;
 /* import com.example.thymeleaf.Users.User; */
 import com.example.thymeleaf.products.Product;
 import com.example.thymeleaf.products.ProductServices;
@@ -28,6 +30,12 @@ public class AdminController {
 
     @Autowired
     private ProductServices productServices;
+
+    @Autowired
+    private UserService userServices;
+
+    @Autowired
+    private TransactionService transactionServices;
 
     @GetMapping("/adminLogin")
     public String showLoginPage(Model model) {
@@ -64,7 +72,11 @@ public class AdminController {
         }
         model.addAttribute("admin", foundAdmin); // Add foundUser to model if needed
 
-        model.addAttribute("allemplist", productServices.getAllProducts());
+        model.addAttribute("allemplistProducts", productServices.getAllProducts());
+
+        model.addAttribute("allemplistUsers", userServices.getAllUsers());
+
+        model.addAttribute("allemplistTransactions", transactionServices.getAllTransactions());
         return "admin";  
     }
 
@@ -79,11 +91,11 @@ public class AdminController {
     @PostMapping("/save")
 	public String saveProduct(@ModelAttribute("product") Product product) {
 		productServices.save(product);
-        System.out.println(product.getId());
+/*         System.out.println(product.getId());
         System.out.println(product.getJs_id());
         System.out.println(product.getName());
         System.out.println(product.getRegularPrice());
-        System.out.println(product.getProductCategory());
+        System.out.println(product.getProductCategory()); */
         
 		return "redirect:/adminManage";
 	}
