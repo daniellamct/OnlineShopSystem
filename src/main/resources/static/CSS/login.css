@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    height: 100vh;
+    background: rgb(172, 185, 125);
+}
+
+.the-head {
+    height: 80px;
+    background: rgb(23, 124, 206);
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    position: sticky;
+    top: 0;
+    border: 3px solid black;
+
+
+}
+
+.title {
+    color: white;
+    font-size: 3em;
+    margin-left: 5px;
+}
+
+.login-container {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+/*     border: 2px red solid; */
+}
+
+.login-container .login-box {
+    width: 400px;
+    height: 400px;
+    border: 5px solid black;
+    background: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.login-container .login-box #login-word {
+    font-size: 2.5em;
+    margin: 20px;
+
+
+}
+
+
+
+.login-container .login-box #username-text {
+    min-height: 50px;
+    min-width: 300px;
+    margin: 10px 0 10px 0;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+
+
+.login-container .login-box #password-text {
+    min-height: 50px;
+    min-width: 300px;
+    margin: 10px 0 10px 0;
+    font-size: 1.2em;
+    padding-left: 10px;
+}
+
+.login-container .login-box #submit-btn {
+    margin-top: 40px;
+    min-height: 50px;
+    min-width: 300px;
+    color: black;
+    text-decoration: none;
+    font-size: 1.3em;
+}
+
+.login-container .login-box #submit-btn:hover {
+    background: rgb(85, 85, 85);
+    color: white;
+}
+
+
+
+
+#linksContainer{
+    margin-top: 10px;
+    display: flex;
+    width: 300px;
+    justify-content: space-around;
+
+
+}

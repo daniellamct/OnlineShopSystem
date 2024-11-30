@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    min-height: 1000px;
+    background: rgb(172, 185, 125);
+}
+
+.the-head {
+    height: 80px;
+    background: rgb(23, 124, 206);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border: 3px solid black;
+
+
+}
+
+.title {
+    color: white;
+    font-size: 3em;
+    margin-left: 5px;
+}
+
+.payment-container {
+    display: flex;
+    align-items: center;
+
+}
+.payment-container #payment-price {
+    color: white;
+    font-size: 2em;
+}
+
+.payment-btn {
+    margin: 5px;
+    padding: 10px;
+    border-radius: 2em;
+    font-size: 1.5em;
+    background: white;
+}
+
+.search-bar {
+    display: flex;
+    height: 30px;
+    border-bottom: 2px black solid;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.search-bar .press{
+    display: flex;
+    height: 100%;
+    align-items: center;
+
+    
+}
+
+.search-bar .type {
+    display: flex;
+    height: 100%;
+    align-items: center;
+    margin: 10px;
+
+}
+.search-bar .choose {
+    margin: 0px 10px;
+}
+
+.search-bar .choose:hover {
+    background: grey;
+}
+
+.search-btn {
+    margin-left: 10px;
+}
+
+#type-word {
+    color: white;
+    font-size: 3em;
+    margin: 15px;
+
+}
+
+#products {
+/*     min-height: 1000px; */
+    display: flex;
+    flex-wrap: wrap;
+    align-content: start;
+    justify-content: flex-start;
+}
+.items {
+    flex: 1 1 200px;
+    max-width: 220px;
+    height: 220px;
+    margin: 15px;
+    border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: rgb(211, 211, 211)
+  
+}
+.item-pic {
+    width: 140px;
+}
+
+.items .action-number {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* border: 2px solid red; */
+   
+}
+
+.items .action-number .number-btn {
+    width: 30px;
+    height: 30px;
+}
+.items .total-price {
+    display: flex;
+    border: 2px black solid;
+}
+
+table {
+    width: 500px;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: grey;
+}
+
+#payment-confirm-container {
+    margin-top: 10px;
+    font-size: 2em;
+}
+
+#payment-confirm-container button{
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    
+}
+
+#searching #name{
+    font-size: 40px;
+
+}
+
+#searching #item-pic{
+    max-width: 400px;
+    width: 80vw;
+
+}
+
+#searching #type{
+    font-size: 30px;
+}
+
+#searching #RPrice{
+    font-size: 30px;
+
+}
+
+#searching #description{
+    font-size: 30px;
+
+}
+
+#searching #keywords{
+    font-size: 30px;
+
+}
+

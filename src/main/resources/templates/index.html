@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="/CSS/index.css">
+        <title>Online shopping</title>
+        <script th:inline="javascript">
+            var products = /*[[${productsJson}]]*/ '';
+            if (products) {
+                products = JSON.parse(products);
+            } else {
+                products = [];
+            }
+            console.log("Products available:", products);
+
+            var usernamePassing = /*[[${foundUser.username}]]*/ '';
+            console.log("The username from thymeleaf is " + usernamePassing);
+        </script>
+
+        <script src="/JavaScript/index.js"></script>
+    </head>
+
+    <body>
+        <div class="the-head">
+            <div class="title">[<span th:text="${foundUser.username}"></span>]Online shopping</div>
+            <div class="payment-container">
+                <div id="payment-price">$0</div>
+    
+                <button class="payment-btn" onclick="paymentPage()">payment</button>    
+
+                
+            </div>
+        </div>
+
+        <div class="search-bar">
+            <div class="press">
+                <div>Search: </div>
+                <button class="choose all" onclick="printTypes('all')">All</button>
+                <button class="choose food" onclick="printTypes('food')">Food</button>
+                <button class="choose drink" onclick="printTypes('drinks')">Drinks</button>
+                <button class="choose book" onclick="printTypes('snacks')">Snacks</button>
+            </div>
+            <div class="type">
+                <input type="text" name="lname" id="searchInput">
+                <button type="button" class="search-btn" onclick="searching()">search</button>
+            </div>
+        </div>
+        <div id="type-word">All</div>
+        <div id="products"></div>
+        <table id="paymentList">
+            <thead id="the_thead"></thead>
+            <tbody id="the_tbody"></tbody>
+        </table>
+        <div id="payment-confirm-container"></div>
+        <div id="searching"></div>
+    </body>
+</html>
