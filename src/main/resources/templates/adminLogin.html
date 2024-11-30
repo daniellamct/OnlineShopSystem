@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CSS/adminLogin.css">
+    <title>Online Shopping - Login</title>
+</head>
+<body>
+    <div class="the-head">
+        <div class="title">Online Shopping</div>
+    </div>
+
+    <form class="login-container" action="#" th:action="@{/adminLogin}" th:object="${admin}" method="post">
+        <div class="login-box">
+            <div id="login-word">Login (Admin)</div>
+            <hr id="login-hr">
+
+            <input id="username-text" placeholder="Username" type="text" th:field="*{username}" required>
+
+            <input id="password-text" placeholder="Password" type="password" th:field="*{password}" required>
+
+            <button id="submit-btn" type="submit">Login</button>
+
+            <div th:if="${error}" style="color:red;">
+                <p th:text="${error}"></p>
+            </div>
+            <div id="linksContainer">
+                <a id="create-account" href="/register">Create an account</a>
+                <a id="switch" href="/">Login as user</a>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

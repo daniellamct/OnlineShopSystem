@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+body {
+    min-height: 1000px;
+    background: rgb(172, 185, 125);
+}
+
+.the-head {
+    height: 80px;
+    background: rgb(23, 124, 206);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    border: 3px solid black;
+
+
+}
+
+.title {
+    color: white;
+    font-size: 3em;
+    margin-left: 5px;
+}
+
+
+.search-bar {
+    display: flex;
+    height: 30px;
+    border-bottom: 2px black solid;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+}
+
+.table {
+    background-color: white;
+}
+
+
+

@@ -10,6 +10,7 @@ import java.util.List;
 @Document(collection = "my_products_mongo_db")  // Specify the MongoDB collection name
 public class Product {
     @Id
+    @JsonProperty("id")
     private String id; // Database ID
 
     @JsonProperty("js_id")
@@ -44,6 +45,10 @@ public class Product {
         return id;
     }
 
+    public void setId(String id){
+        this.id = id;
+    }
+    
     public String getJs_id() {
         return js_id;
     }

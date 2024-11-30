@@ -6,7 +6,7 @@
     "RegularPrice": 10,
     "ProductCategory": "snacks",
     "Keywords": ["solid", "sweet", "meat_free"],
-    "ImageSource": "source/snacks/candy.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/candy.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -17,7 +17,7 @@
     "RegularPrice": 20,
     "ProductCategory": "drinks",
     "Keywords": ["liquid", "sweet", "meat_free"],
-    "ImageSource": "source/drinks/mango_juice.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/mango_juice.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -28,7 +28,7 @@
     "RegularPrice": 15,
     "ProductCategory": "snacks",
     "Keywords": ["solid", "sweet", "meat_free"],
-    "ImageSource": "source/snacks/chocolate.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/chocolate.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -39,7 +39,7 @@
     "RegularPrice": 120,
     "ProductCategory": "food",
     "Keywords": ["solid", "nonsweet", "meat_free"],
-    "ImageSource": "source/food/rice.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/rice.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -50,7 +50,7 @@
     "RegularPrice": 30,
     "ProductCategory": "food",
     "Keywords": ["solid", "sweet", "meat_free"],
-    "ImageSource": "source/food/honey.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/honey.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -61,7 +61,7 @@
     "RegularPrice": 30,
     "ProductCategory": "drinks",
     "Keywords": ["liquid", "sweet", "meat_free"],
-    "ImageSource": "source/drinks/milk.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/milk.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -72,7 +72,7 @@
     "RegularPrice": 40,
     "ProductCategory": "food",
     "Keywords": ["liquid", "nonsweet", "meat_free"],
-    "ImageSource": "source/food/oil_one.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/oil_one.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -83,7 +83,7 @@
     "RegularPrice": 98,
     "ProductCategory": "food",
     "Keywords": ["liquid", "nonsweet", "meat_free"],
-    "ImageSource": "source/food/oil_three.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/oil_three.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -94,7 +94,7 @@
     "RegularPrice": 16,
     "ProductCategory": "food",
     "Keywords": ["solid", "nonsweet", "meat"],
-    "ImageSource": "source/food/spam.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/spam.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -105,7 +105,7 @@
     "RegularPrice": 12,
     "ProductCategory": "snacks",
     "Keywords": ["solid", "sweet", "meat_free"],
-    "ImageSource": "source/snacks/candy_bean.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/candy_bean.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -116,7 +116,7 @@
     "RegularPrice": 10,
     "ProductCategory": "snacks",
     "Keywords": ["solid", "sweet", "meat_free"],
-    "ImageSource": "source/snacks/candy_stick.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/candy_stick.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -127,7 +127,7 @@
     "RegularPrice": 34,
     "ProductCategory": "drinks",
     "Keywords": ["liquid", "sweet", "meat_free"],
-    "ImageSource": "source/drinks/pepsi.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/pepsi.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -138,7 +138,7 @@
     "RegularPrice": 16,
     "ProductCategory": "drinks",
     "Keywords": ["liquid", "sweet", "meat_free"],
-    "ImageSource": "source/drinks/juice.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/juice.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -149,7 +149,7 @@
     "RegularPrice": 12,
     "ProductCategory": "snacks",
     "Keywords": ["solid", "sweet", "meat_free"],
-    "ImageSource": "source/snacks/soft_candy.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/soft_candy.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -160,7 +160,7 @@
     "RegularPrice": 24,
     "ProductCategory": "snacks",
     "Keywords": ["solid", "sweet", "meat_free"],
-    "ImageSource": "source/snacks/chocolate_biscuit.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/chocolate_biscuit.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -171,7 +171,7 @@
     "RegularPrice": 24,
     "ProductCategory": "food",
     "Keywords": ["liquid", "nonsweet", "meat_free"],
-    "ImageSource": "source/food/soup.png",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/soup.png?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -182,7 +182,7 @@
     "RegularPrice": 28,
     "ProductCategory": "drinks",
     "Keywords": ["liquid", "sweet", "meat_free"],
-    "ImageSource": "source/drinks/chocolate_milk.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/chocolate_milk.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -193,18 +193,18 @@
     "RegularPrice": 24,
     "ProductCategory": "drinks",
     "Keywords": ["liquid", "sweet", "meat_free"],
-    "ImageSource": "source/drinks/lemon_tea.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/lemon_tea.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
   {
     "js_id": "19",
-    "Name": "Chocolate Ball",
+    "Name": "Chocolate Kamsa",
     "Description": "Chocolate-covered candy balls.",
     "RegularPrice": 20,
     "ProductCategory": "snacks",
     "Keywords": ["solid", "sweet", "meat_free"],
-    "ImageSource": "source/snacks/chocolate_kamsa.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/chocolate_kamsa.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -215,7 +215,7 @@
     "RegularPrice": 15,
     "ProductCategory": "food",
     "Keywords": ["solid", "nonsweet", "meat_free"],
-    "ImageSource": "source/food/cup_noodles.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/cup_noodles.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -226,7 +226,7 @@
     "RegularPrice": 22,
     "ProductCategory": "food",
     "Keywords": ["solid", "nonsweet", "meat_free"],
-    "ImageSource": "source/food/bread.png",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/bread.png?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -237,7 +237,7 @@
     "RegularPrice": 32,
     "ProductCategory": "food",
     "Keywords": ["solid", "nonsweet", "meat_free"],
-    "ImageSource": "source/food/noodles.jpg",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/noodles.jpg?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   },
@@ -248,7 +248,7 @@
     "RegularPrice": 36,
     "ProductCategory": "food",
     "Keywords": ["solid", "nonsweet", "meat_free"],
-    "ImageSource": "source/food/spicy_noodles.png",
+    "ImageSource": "https://grpproblobstorage.blob.core.windows.net/myproductpics/spicy_noodles.png?sp=r&st=2024-11-29T17:46:05Z&se=2025-11-30T01:46:05Z&spr=https&sv=2022-11-02&sr=c&sig=ZX6K1z9WiuxZsqZ3BJMVvL1dMAnl4lVZVdLU0c5fS5Q%3D",
     "Quantity": 0,
     "Show": true
   }
