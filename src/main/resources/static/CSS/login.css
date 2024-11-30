@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -19,8 +18,6 @@ body {
     position: sticky;
     top: 0;
     border: 3px solid black;
-
-
 }
 
 .title {
@@ -34,7 +31,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-/*     border: 2px red solid; */
 }
 
 .login-container .login-box {
@@ -45,17 +41,12 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-
 }
 
 .login-container .login-box #login-word {
     font-size: 2.5em;
     margin: 20px;
-
-
 }
-
-
 
 .login-container .login-box #username-text {
     min-height: 50px;
@@ -64,8 +55,6 @@ body {
     font-size: 1.2em;
     padding-left: 10px;
 }
-
-
 
 .login-container .login-box #password-text {
     min-height: 50px;
@@ -89,14 +78,9 @@ body {
     color: white;
 }
 
-
-
-
 #linksContainer{
     margin-top: 10px;
     display: flex;
     width: 300px;
     justify-content: space-around;
-
-
 }

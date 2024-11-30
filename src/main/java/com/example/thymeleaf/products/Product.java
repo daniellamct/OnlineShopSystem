@@ -2,19 +2,17 @@ package com.example.thymeleaf.products;
 
 import org.springframework.data.annotation.Id;
 import org.springframework.data.mongodb.core.mapping.Document;
-
 import com.fasterxml.jackson.annotation.JsonProperty;
-
 import java.util.List;
 
-@Document(collection = "my_products_mongo_db")  // Specify the MongoDB collection name
+@Document(collection = "my_products_mongo_db") // The name of mongodb collection
 public class Product {
     @Id
     @JsonProperty("id")
     private String id; // Database ID
 
     @JsonProperty("js_id")
-    private String js_id;  // Unique identifier for the product
+    private String js_id;  // ID for the product
 
     @JsonProperty("Name")
     private String Name;    // Name of the product
@@ -29,16 +27,16 @@ public class Product {
     private String ProductCategory; // Category of the product
 
     @JsonProperty("Keywords")
-    private List<String> Keywords; // Added Keywords property
+    private List<String> Keywords; // Keywords of the product 
 
     @JsonProperty("ImageSource")
-    private String ImageSource; // Added ImageSource property
+    private String ImageSource; // ImageSource of the product
 
     @JsonProperty("Quantity")
-    private int Quantity; // Updated to match JSON
+    private int Quantity; // Default quantity of the product for customers
 
     @JsonProperty("Show")
-    private boolean Show; // Updated to match JSON
+    private boolean Show; // Determine if the product is on sell
 
     // Getters and Setters
     public String getId() {

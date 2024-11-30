@@ -10,7 +10,7 @@ function printTypes(type) {
     const myConfirm = document.getElementById('payment-confirm-container');
     myConfirm.innerHTML = '';
     
-    // Deleting current products's details
+    // Deleting current product detail's page
     const searching = document.getElementById('searching');
     searching.innerHTML = '';
 
@@ -19,7 +19,7 @@ function printTypes(type) {
     
     //Changing the content
     for(const product of products) {
-        if((product.ProductCategory === type) || (type === 'all')){
+        if(((product.ProductCategory === type) || (type === 'all')) && (product.show)){
             const theItem = document.createElement('div');
             theItem.className = 'items';
             theItem.innerHTML = `
@@ -30,9 +30,7 @@ function printTypes(type) {
             <div class="number" id=${'total_Q_' + product.js_id}>${product.Quantity}</div>
             <button class="number-btn increase" onclick="update('${product.js_id}', 1)">+</button>
             </div>
-            <div class='price'>${'each $' + product.RegularPrice}</div>
-            
-            
+            <div class='price'>${'each $' + product.RegularPrice}</div>        
             `;
             myProducts.appendChild(theItem);
             
@@ -51,15 +49,11 @@ function printTypes(type) {
     }else{
         console.log("Error when setting the type of page.");
     }
-    
-    
 }
 
 let total_price = 0;
 
 function update(targetId, target) {
-
-
     for(const product of products) {
         if(product.js_id === targetId){
             if((product.Quantity > 0) || (target == 1)){
@@ -119,7 +113,6 @@ function paymentPage() {
   const myBody = document.getElementById('the_tbody');
   myBody.innerHTML = '';
   
-
   for(const product of products) {
       if(product.Quantity > 0) {
           const theItem = document.createElement('tr');
@@ -160,6 +153,9 @@ function searching(){
     }
     console.log("product found");
 
+    if(!targetProduct.show){
+        return;
+    }
     // Show the product details page
 
     // Deleting all current products
@@ -206,8 +202,8 @@ function sendTransactionData() {
 
     const calculatedData = {
     username: usernamePassing,
-    totalPrice: my_total_price, // Example calculated total price
-    // Add other fields as necessary
+    totalPrice: my_total_price, 
+
     };
     console.log("send transaction is clicked")
     console.log(calculatedData); // This will update the data
@@ -234,9 +230,6 @@ function sendTransactionData() {
 
     window.location.href = window.location.origin + '/';
 }
-
-
-
 
 
 

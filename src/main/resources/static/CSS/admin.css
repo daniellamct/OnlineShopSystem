@@ -44,4 +44,16 @@ body {
 }
 
 
+#product-table {
+    font-size: 0.8em;
+    
+}
 
+#product-table th {
+    padding: 5px;
+}
+
+#product-table td {
+    padding: 2px;
+
+}

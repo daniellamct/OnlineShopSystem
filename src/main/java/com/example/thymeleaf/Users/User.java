@@ -7,7 +7,7 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class User {
     @Id
     private String id; // Database ID
-    private String username; // Unique identifier for the user
+    private String username; //  Username of the user
     private String password; // Password of the user
 
     // Getters and Setters

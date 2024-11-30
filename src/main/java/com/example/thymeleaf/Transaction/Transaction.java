@@ -7,9 +7,8 @@ import org.springframework.data.mongodb.core.mapping.Document;
 public class Transaction {
     @Id
     private String id; // Database ID
-    
-    private String username; // Unique identifier for the user
-    private float totalPrice; // Password of the user
+    private String username; // Username of the user
+    private float totalPrice; // Total Price of the transaction
 
     // Getters and Setters
     public String getId() {

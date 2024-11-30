@@ -5,10 +5,12 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
-
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
-
 import org.springframework.web.bind.annotation.ModelAttribute;
+
+// Libraries for hashing
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
 
 @Controller
 public class UserController {
@@ -16,44 +18,48 @@ public class UserController {
     @Autowired
     private UserService userService; 
 
-    @Autowired
-    private UserRepository userRepository;
-
-    @GetMapping("/register")
-    public String showRegistrationPage(Model model) {
-        model.addAttribute("user", new User());
-        return "register"; // Return the registration view
-    }
-
-    @PostMapping("/register")
-    public String registerUser(@ModelAttribute User user, Model model) {
-        userRepository.save(user); // Save user to MongoDB
-        return "redirect:/login"; // Redirect to login page after registration
-    }
-
     @GetMapping("/")
     public String showLoginPage(Model model) {
         model.addAttribute("user", new User());
-        for(int i = 0; i < 50; i++){
-            System.out.println("Getting");
-        }
         return "login"; 
     }
 
-
     @PostMapping("/")
     public String processLogin(@ModelAttribute User user, RedirectAttributes redirectAttributes, Model model) {
-
         User foundUser = userService.findByUsername(user.getUsername());
-        // found the user
-        if (foundUser != null && foundUser.getPassword().equals(user.getPassword())) {
+        
+        // Hash the received password
+        String hashedInputPassword = hashString(user.getPassword());
+
+        // Compare the hashed input password with the stored hashed password
+        if (foundUser != null && foundUser.getPassword().equals(hashedInputPassword)) {
             redirectAttributes.addFlashAttribute("foundUser", foundUser);
             return "redirect:/products"; // Redirect to the products page after login
         }
-        // cannot find the user
+
+        // Cannot find the user
         model.addAttribute("error", "Invalid username or password");
         return "login"; // Return to the login page with an error
     }
 
+    // Function to hash a password by SHA-256
+    private String hashString(String input) {
+        try {
+            MessageDigest digest = MessageDigest.getInstance("SHA-256");
+            byte[] hashedBytes = digest.digest(input.getBytes());
+            StringBuilder hexString = new StringBuilder();
 
+            for (byte b : hashedBytes) {
+                String hex = Integer.toHexString(0xff & b);
+                if (hex.length() == 1) {
+                    hexString.append('0');
+                }
+                hexString.append(hex);
+            }
+
+            return hexString.toString();
+        } catch (NoSuchAlgorithmException e) {
+            throw new RuntimeException(e);
+        }
+    }
 }

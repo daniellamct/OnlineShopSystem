@@ -15,11 +15,11 @@ public class TransactionService {
 
   
     public Transaction registerTransaction(Transaction transaction) {
-        return transactionRepository.save(transaction); // Save user to MongoDB
+        return transactionRepository.save(transaction); // Save transaction to MongoDB
     }
 
     public List<Transaction> getAllTransactions() {
-        return transactionRepository.findAll(); // Retrieve all products
+        return transactionRepository.findAll(); // Retrieve all transaction
     }
 
 }

@@ -2,7 +2,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 body {
@@ -19,8 +18,6 @@ body {
     position: sticky;
     top: 0;
     border: 3px solid black;
-
-
 }
 
 .title {
@@ -59,9 +56,7 @@ body {
 .search-bar .press{
     display: flex;
     height: 100%;
-    align-items: center;
-
-    
+    align-items: center;   
 }
 
 .search-bar .type {
@@ -69,8 +64,8 @@ body {
     height: 100%;
     align-items: center;
     margin: 10px;
-
 }
+
 .search-bar .choose {
     margin: 0px 10px;
 }
@@ -87,11 +82,9 @@ body {
     color: white;
     font-size: 3em;
     margin: 15px;
-
 }
 
 #products {
-/*     min-height: 1000px; */
     display: flex;
     flex-wrap: wrap;
     align-content: start;
@@ -107,8 +100,8 @@ body {
     flex-direction: column;
     align-items: center;
     background: rgb(211, 211, 211)
-  
 }
+
 .item-pic {
     width: 140px;
 }
@@ -118,14 +111,13 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
-    /* border: 2px solid red; */
-   
 }
 
 .items .action-number .number-btn {
     width: 30px;
     height: 30px;
 }
+
 .items .total-price {
     display: flex;
     border: 2px black solid;
@@ -156,18 +148,15 @@ th {
     width: 100px;
     height: 50px;
     font-size: 18px;
-    
 }
 
 #searching #name{
     font-size: 40px;
-
 }
 
 #searching #item-pic{
     max-width: 400px;
     width: 80vw;
-
 }
 
 #searching #type{
@@ -176,16 +165,13 @@ th {
 
 #searching #RPrice{
     font-size: 30px;
-
 }
 
 #searching #description{
     font-size: 30px;
-
 }
 
 #searching #keywords{
     font-size: 30px;
-
 }
 
